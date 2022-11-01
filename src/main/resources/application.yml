@@ -1,0 +1,22 @@
+micronaut:
+  application:
+    name: employeemanagement
+netty:
+  default:
+    allocator:
+      max-order: 3
+
+datasources:
+  default:
+    url: jdbc:postgresql://localhost:5432/employee
+    username: postgres
+    password: bibush123
+    dialect: POSTGRES
+
+jpa:
+  default:
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
